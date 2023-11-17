@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Futura";
+  font-weight: bold;
+  font-style: normal;
+  src: url("./Futura.otf") format("opentype");
+  font-display: swap;
+}

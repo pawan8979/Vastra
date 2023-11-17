@@ -1,0 +1,139 @@
+.loginsignup{
+    width: 100%;
+    height: 90vh;
+    background-color: #fce3fe;
+    padding-top: 3.125rem;
+}
+
+.loginsignup-container{
+    width: 36.25rem;
+    height: 34.375rem;
+    background-color: white;
+    margin: auto;
+    padding: 0.625rem 2.5rem;
+}
+
+.loginsignup-container h1{
+    margin: 0.938rem 0rem;
+}
+
+.loginsignup-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.loginsignup-fields input{
+    height: 3.875rem;
+    width: 100%;
+    padding-left: 0.938rem;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 1.063rem;
+}
+
+.loginsignup-container button{
+    width: 31.25rem;
+    height: 3.75rem;
+    color: white;
+    background-color: #ff4141;
+    margin-top: 1.25rem;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginsignup-login{
+    margin-top: 1.25rem;
+    color: #5c5c5c;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.loginsignup-login span{
+    color: #ff4141;
+    font-weight: 600;
+}
+
+.loginsignup-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+    gap: 1.25rem;
+    color: #5c5c5c;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .loginsignup{
+        padding-top: 2.5rem;
+        height: 85vh;
+    }
+    
+    .loginsignup-container{
+        width: 36.25rem;
+        height: 26.875rem;
+    }
+    
+    .loginsignup-container h1{
+        margin: 0.938rem 0rem;
+        font-size: 1.5rem;
+    }
+    
+    .loginsignup-fields{
+        gap: 0.938rem;
+        margin-top: 0.938rem;
+    }
+    
+    .loginsignup-fields input{
+        height: 52px;
+        font-size: 15px;
+    }
+    
+    .loginsignup-container button{
+        height: 50px;
+        margin-top: 0.938rem;
+        font-size: 1rem;
+    }
+    
+    .loginsignup-login{
+        margin-top: 0.938rem;
+        font-size: 0.938rem;
+    }
+
+    .loginsignup-agree{
+        margin-top: 0.938rem;
+        gap: 0.625rem;
+        font-size: 0.938rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .loginsignup{
+        padding-top: 6.25rem;
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .loginsignup{
+        width: 100%;
+        height: 65vh;
+        background-color: #fce3fe;
+        padding-top: 1.6rem;
+    }
+    .loginsignup-container{
+        width: 22.25rem;
+        height: 28.875rem;
+    }
+    .loginsignup-container button{
+        width: 17.25rem;
+        height: 2.75rem;
+    }
+}
