@@ -43,13 +43,17 @@ pipeline{
         		script {
             			// Build Docker image
             			sh "docker build -t vastra ."
+				withCredentials([usernamePassword(credentialsId:"docker-hub", passwordVariable:"dockerHubPass", usernameVariable:"dockerHubUser")]){
+				
+				// Tag the Docker image
+                    		sh "docker tag vastra ${env.dockerHubUser}/vastra:latest"
 
-            			// Tag the Docker image
-            			sh "docker tag vastra pawan8979/vastra:latest"
+				//login to docker hub
+                    		sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPass}"
 
-            			// Push the Docker image to the registry
-            			sh "docker push pawan8979/vastra:latest"
-        		}
+				// Push the Docker image to the registry
+                    		sh "docker push ${env.dockerHubUser}/vastra:latest"
+                	}
     		}
 	}
 
